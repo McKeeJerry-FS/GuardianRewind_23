@@ -37,5 +37,7 @@ function reverseMessage(msg){
 
 // displays the reversed message
 function displayReversedMessage(revMsg){
-    
+    document.getElementById('msg').textContent = `Your message reversed is: ${revMsg}`;
+
+    document.getElementById('alert').classList.remove('invisible');
 }
