@@ -24,14 +24,15 @@ function getValues(){
 
 // reverse the string 
 function reverseMessage(msg){
-    let messageArray = msg.split('');
-    let outputArray = [];
-    for(let i = messageArray.length - 1; i >= 0 ;i--){
-        let letter = messageArray[i];
-        outputArray.push(letter);
-    }
+    let output = '';
+    // iterates through the string starting at the end, iterates to the beginning
+    for(let i = msg.length - 1; i >= 0 ;i--){
 
-    let output = outputArray.join('');
+        let letter = msg[i];
+        // adds each letter to the reversed string
+        output += letter
+    }
+    // returns the newly created reversed string
     return output;
 }
 
