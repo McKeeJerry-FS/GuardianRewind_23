@@ -8,8 +8,9 @@ function getValues(){
     if(msg.length == 0){
         Swal.fire({
             icon: 'error',
+            backdrop: false,
             title: 'Oops',
-            message: 'Please enter a message to reverse',
+            text: 'Please enter a message to reverse',
         });
     }
     else {
