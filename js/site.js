@@ -23,11 +23,19 @@ function getValues(){
 }
 
 // reverse the string 
-function reverseMessage(message){
-    let msg = message;
+function reverseMessage(msg){
+    let messageArray = msg.split('');
+    let outputArray = [];
+    for(let i = messageArray.length - 1; i >= 0 ;i--){
+        let letter = messageArray[i];
+        outputArray.push(letter);
+    }
+
+    let output = outputArray.join('');
+    return output;
 }
 
 // displays the reversed message
-function displayReversedMessage(){
-
+function displayReversedMessage(revMsg){
+    
 }
